@@ -35,15 +35,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+      # - name: Setup Pages
+      #   uses: actions/configure-pages@v5
 
         # Upload required because actions/deploy-pages requires it
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          path: './index.html'
+          path: 'index.html'
 
         # Finally deploy 
       - name: Deploy to GitHub Pages
