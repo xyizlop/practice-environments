@@ -35,6 +35,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # Optional But recommended to setup pages
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
