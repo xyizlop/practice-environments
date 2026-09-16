@@ -29,3 +29,9 @@ The `index.html` file:
 - [Optional] Setup Page → `actions/configure-pages` (enable Pages and extract various metadata about a site)
 - Upload Artifacts (Must be tarball directory, file not accepted so `index.html` is placed under `_site`) → `actions/upload-pages-artifact` (Default `path` is `_site`)
 - Deploy Page → `actions/deploy-pages` (Accepts the tarball uploaded by previous step, Required permissions: `contents: read`, `pages: write`, `id-token: write`)
+
+## Add Review
+
+Go to Repository **Settings → Environments → github-pages → Deployment protection rules → Check Required reviewers → Add by github username**
+
+This means reviewers hav to review and then deploy.
